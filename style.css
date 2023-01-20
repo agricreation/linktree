@@ -2,8 +2,10 @@
 
 *{
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(20, 21, 68) !important;
     color: white !important;
+}
+body{
+    background-color: rgb(20, 21, 68) !important;
 }
 .instagram img{
     width: 30px;
@@ -45,13 +47,17 @@
     width: 20px;
     height: auto;
 }
+.btn img{
+    width: 30px;
+    height: 30px;
+}
+.nav_toggle img{
+    width: 30px !important;
+    height: 30px !important;
+}
 
 @media only screen and (max-width: 768px) {
     /* mobile */
-    .mt_5{
-        margin-top: 50%;
-        margin-bottom: 50%;
-    }
     .logo img{  
         width: 50%;
         height: 50%;
@@ -77,6 +83,15 @@
     }
     .btn-light{
         background-color: rgb(136, 8, 255) !important;
+    }
+    .navbar-toggler:focus{
+        box-shadow: none !important;
+    }
+    .hireme{
+        width: 50% !important;    
+    }
+    .navbar-text a{
+        text-decoration: none;
     }
 
 }
