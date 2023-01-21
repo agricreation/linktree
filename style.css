@@ -87,9 +87,6 @@ body{
     .navbar-toggler:focus{
         box-shadow: none !important;
     }
-    .hireme{
-        width: 50% !important;    
-    }
     .navbar-text a{
         text-decoration: none;
     }
