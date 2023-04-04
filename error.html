@@ -33,7 +33,28 @@
         <div><p class="text-center bg-danger p-2"> <a style="text-decoration: none;" href="https://links.agricreations.com">Invalid Url : <span class="text-success fw-bold bg-dark">link.agricreation.com</span> /slug(Target) Redirecting...</a> <span class="rounded fw-bold bg-success px-3" id="count">05</span> </p class="text-center"></div>
     </section> -->
     <section>
-        <div><p class="text-center bg-danger p-2"> <a style="text-decoration: none;" href="https://links.agricreations.com">Invalid Url : <span class="- fw-bold - py-2">link.agricreation.com/</a></span> <input class="py-1 text-success" id="value" type="text" value="" placeholder="slug"> <a class="text-decoration-none" href="#" id="submit"> <span class="rounded fw-bold bg-success px-3 py-2" id="count">Redirect</span></a> </p class="text-center"></div>
+        <div><p class="text-center bg-danger p-2"> <a style="text-decoration: none;" href="https://links.agricreations.com">Invalid Url : <span class="- fw-bold - py-2">link.agricreation.com/</a></span>
+          
+          <!-- <input class="py-1 text-success" id="value" type="text" value="" placeholder="slug">  -->
+                        <!-- Default dropend button -->
+                        <select name="slug" class="py-2 px-3 text-success" id="slug" >
+                          <option value="projects" class="text-success">Projects</option>
+                          <option value="email" class="text-success">Email</option>
+                          <option value="gmail" class="text-success">Gmail</option>
+                          <option value="resume" class="text-success">Resume</option>
+                          <option value="gitlab" class="text-success">Gitlab</option>
+                          <option value="github" class="text-success">Github</option>
+                          <option value="linkedin" class="text-success">Linkedin</option>
+                          <option value="instagram" class="text-success">Instagram</option>
+                          <option value="youtube" class="text-success">Youtube</option>
+                          <option value="whatsapp" class="text-success">Whatsapp</option>
+                        </select>
+          <a class="text-decoration-none" target="_blank" href="#" id="submit"> <span class="rounded fw-bold bg-success px-3 py-2" id="count">Redirect</span></a> </p class="text-center">
+      
+                    
+</div>
+
+
     </section>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -144,7 +165,7 @@
     <script>
 
         submit.addEventListener('click',()=>{
-        let value = document.getElementById("value");
+        let value = document.getElementById("slug");
         let submit = document.getElementById("submit");
         let redirect = `https://link.agricreations.com/${value.value}`;
             submit.href = `${redirect}`;
